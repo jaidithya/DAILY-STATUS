@@ -1,0 +1,14 @@
+from itertools import permutations
+n = int(input("Enter The Number Of List Elements: "))
+a = []
+b = []
+for i in range(n):
+    a.append((int(input())))
+r = int(input("Enter The r Value: "))
+perm = permutations(a, r)
+for i in list(perm):
+    v = 0
+    for j in i:
+        v = v*10+j
+    b.append(v)
+print(str(b))
